@@ -1,0 +1,256 @@
+html{
+    scroll-behavior: smooth;
+}
+header {
+    background-image: url('../imgs/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.h-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+nav {
+    z-index: 10;
+}
+.befor::before , .hom::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: 100%;
+    left: 50%;
+    background-color: #fff;
+    transform: translateX(-50%);
+    transition: all ease .3s;
+}
+.befor::before {
+    width: 0;
+}
+.hov:hover ::before , .hom::before ,.services .inner  {
+    width: 80%;
+}
+header nav .uln {
+    width: 55% ;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transition: .7s all ease;
+}
+
+.h-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 86vh;
+}
+h1 {
+    color:#fff;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.typewriter h2 {
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #fff; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-weight: 600px;
+animation: typing 2s steps(20, end),blink-caret .4s step-end infinite;
+}
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff; }
+}
+
+.about-container{
+    width: 85%;
+    margin: auto;
+}
+.about-container section {
+    padding-top: 4rem;
+}
+.ull {
+    width: 65%;
+}
+.about-container .inner {
+    width: 90%;
+}
+.about-container .inner{
+    display: flex;
+}
+.about-container .inner .item{
+    width: 49%;
+}
+.pos {
+    position: relative;
+}
+.aft-aboutme::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    top: 100%;
+    left: 50%;
+    background-color: #0078ff;
+    transform: translateX(-50%);
+}
+.inner  .aft {
+    width: 40px;
+    height: 5px;
+}
+/* .services .content .item , .portfolio .content .item  {
+    width: 32%;
+} */
+.services .content .item  .round {
+    border-radius: 1rem;
+}
+.services .content .item .card .icon {
+    border-radius: 50%;
+    border-width: .7rem;
+    padding: 30px;
+    border-color: #0078ff;
+    transition: all ease .7s;
+}
+.services .content .item .card:hover .icon {
+    background-color:#0078ff ;
+    border-color: #cde1f8;
+    color: #fff;
+}
+.counter {
+    background-image: url('../imgs/counters-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.counter .inner {
+    background-color: rgb(0, 120, 255, .7 );
+}
+.counter .icon {
+    border-radius: 50%;
+    border-width: 1em;
+    padding: 20px;
+    border:solid #fff;
+}
+.counter .content {
+    width: 80%;
+}
+.portfolio .content .border {
+border-radius: 50%;
+}
+.portfolio .card img{
+    transition: all ease .7s;
+}
+.portfolio .card:hover img {
+    transform: scale(1.5);
+}
+
+.portfolio .inner ,.contact .content ,.blog .inner  {
+    width: 85%;
+}
+
+.carousel-content{
+    padding: 8rem 0 !important;
+    /* border: transparent solid 1px; */
+    background-color: #0078ff;
+}
+.carousel-content  p {
+    max-width: 50%;
+}
+
+
+
+
+
+.blog .card-footer img {
+    width:10%;
+}
+/* .blog .card1 {
+    width: 32%;
+} */
+.blog .card1 button  {
+    transform: translate(-50% ,130%);
+}
+.contact {
+    background-image: url('../imgs/overlay-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact-container {
+    background-color: rgb(0, 120, 255, .7 );
+}
+.contact .btn {
+    font-size: 17px;
+    letter-spacing: 2;
+    padding: 15px 25px;
+}
+.after {
+    width: 100px;
+    height: 3px;
+    margin-right: auto !important;
+}
+/* .colm1-w {
+    width: 48%;
+} */
+.ico-hov i {
+    transition: all ease .7s;
+    color: black;
+    border:solid #0078ff;
+    border-radius: 50%;
+}
+.ico-hov:hover i {
+    background-color: #0078ff;
+    border-color: #cde1f8;
+    color: #fff;
+}
+.footer {
+    background-color: rgba(0, 98, 211 );
+    box-shadow: 5px 0 0;
+}
+.border4m {
+    border: solid transparent;
+}
+.contact .content {
+    margin-top:64px;
+}
+
+@media  screen and (max-width:1250px) {
+    header nav .uln {
+        width: 80%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .typewriter h2{
+        font-size: 30px;
+    }
+    .hom {
+        opacity: 0;
+    }
+    .about-container .inner .item {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .about-container .inner {
+        display: block;
+    }
+    .blog .card1 button  {
+        transform: translate(-50% ,-50%);
+    }
+
+.contact .ww {
+    width: 80% !important;
+}
+
+}
